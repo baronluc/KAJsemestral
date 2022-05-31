@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Sudoku </title>
+
+        <!--CSS styling-->
+        <link rel="stylesheet" href="styles.css" type="text/css">
+
+        <!--JavaScript-->
+        <script src="index.js" type="text/javascript"></script>
+
+        <!--Header font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Sudoku</h1>
+            <!--Game settings panel-->
+            <div id="game-settings">
+                <!--Area for choosing game difficulty, you can choose easy/medium/hard-->
+                <div id="game-difficulty">
+                    <h2>Choose difficulty: </h2>
+                    <label> <input id="difficulty-easy" type="radio" name="difficulty" value="easy" checked>
+                        Easy</label>
+                    <label> <input id="difficulty-medium" type="radio" name="difficulty" value="medium">
+                        Medium</label>
+                    <label> <input id="difficulty-hard" type="radio" name="difficulty" value="hard">
+                        Hard</label>
+                </div>
+            </div>
+            <!--Button for creating new game-->
+            <button id="new-game">Create new game</button>
+
+            <!--Button for showing solution of the game-->
+            <button id="solution">Show solution</button>
+
+            <!--Button for saving game-->
+            <button id="save">Save game</button>
+        </header>
+
+        <!--Area for showing game stats like timer and remaining lives-->
+        <div id="game-stats">
+            <p id="lives"></p>
+        </div>
+
+        <!--Game area with number picker and sudoku board-->
+        <div id="game">
+            <!--Sudoku board-->
+            <div id="board"></div>
+
+            <!--Number picker-->
+            <div id="number-container" class="hidden">
+                <p id="one">1</p>
+                <p id="two">2</p>
+                <p id="three">3</p>
+                <p id="four">4</p>
+                <p id="five">5</p>
+                <p id="six">6</p>
+                <p id="seven">7</p>
+                <p id="eight">8</p>
+                <p id="nine">9</p>
+            </div>
+        </div>
+    </body>
+</html>
